@@ -1,0 +1,484 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.body {
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+/* Navigation */
+
+.w-nav {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.nav-link {
+  margin-top: 0px;
+  padding-top: 24px;
+  padding-right: 30px;
+  float: none;
+  font-family: Roboto, sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.nav-link:hover {
+  margin-top: 0px;
+  border-top: 2px solid white;
+  color: white;
+  font-weight: 300;
+}
+
+.logo {
+  height: 80px;
+  margin-top: 4px;
+}
+
+.logo.w--current {
+  margin-top: 8px;
+}
+
+/* View Resume */
+
+.nav-view-resume {
+  display: inline-block;
+  margin-top: 12px;
+  margin-left: 10px;
+  float: none;
+  clear: left;
+  border: 1px solid white;
+  border-radius: 41px;
+}
+
+.nav-view-resume:hover {
+  background-color: white;
+}
+
+.nav-view-resume-button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 16px;
+  float: none;
+  clear: none;
+  background-color: transparent;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.nav-view-resume-button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+}
+
+/* Home */
+
+#home {
+  background: linear-gradient(rgba(53, 202, 185, 0.78), rgba(46, 195, 206, 0.78));
+}
+
+.home-container {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 40px;
+}
+
+.home-copy-wrapper {
+  margin-top: 60px;
+}
+
+.home-title {
+  font-family: Roboto, sans-serif;
+  color: white;
+  font-size: 68px;
+  line-height: 65px;
+  text-align: left;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-indent: 0px;
+}
+
+.home-text {
+  font-family: Roboto, sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.home-illustration {
+  float: left;
+}
+
+/* Blog Posts */
+
+.blog-wrapper {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.blog-post {
+  float: left;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+.blog-post-title {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
+.blog-post-metadata {
+  font-family: Roboto, sans-serif;
+  color: #21252a;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.medium-button {
+  margin-top: 10px;
+  margin-right: 0px;
+  margin-left: -5px;
+  padding: 5px 15px;
+  border: 1px solid #21252a;
+  border-radius: 96px;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: Roboto, sans-serif;
+  color: #21252a;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.medium-button:hover {
+  border-style: none;
+  background-color: white;
+}
+
+/* About */
+
+.about {
+  background-color: #fdfdfd;
+}
+
+/* View Resume */
+
+.about-view-resume-button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 14px 18px;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.about-view-resume-button:hover {
+  margin-top: 0px;
+}
+
+.about-view-resume {
+  display: block;
+  width: 160px;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+  clear: none;
+  border-radius: 112px;
+  background-color: #0098ff;
+  background-image: -webkit-linear-gradient(left, #2cb8d2, #36bfbf);
+  background-image: linear-gradient(to right, #2cb8d2, #36bfbf);
+}
+
+.about-view-resume:hover {
+  background-image: -webkit-linear-gradient(left, #57c6da, #60cccd);
+  background-image: linear-gradient(to right, #57c6da, #60cccd);
+}
+
+/* Apps */
+
+.apps {
+  background-color: #f2f3ef;
+}
+
+.apps-illustration {
+  display: block;
+  margin: 50px auto 40px;
+  float: none;
+  clear: none;
+  text-align: left;
+}
+
+.apps-container {
+  margin-top: 60px;
+}
+
+.app-description {
+  padding-top: 20px;
+  float: none;
+  clear: left;
+}
+
+.app-icon {
+  margin-right: 30px;
+  float: left;
+  clear: none;
+}
+
+.app-name {
+  padding-left: 0px;
+  float: none;
+  font-family: Roboto, sans-serif;
+  color: #282f36;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: 2px;
+}
+
+.app-metadata {
+  margin-top: 2px;
+  padding-left: 0px;
+  float: none;
+  clear: none;
+  font-family: Roboto, sans-serif;
+  color: #21252a;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.app-name-container {
+  margin-top: 20px;
+  float: left;
+  clear: none;
+}
+
+.app-store-download-icon {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.app-store-download {
+  display: block;
+  width: 160px;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 96px;
+  background-color: #282f36;
+}
+
+.app-store-download:hover {
+  background-image: -webkit-linear-gradient(left, #2cb8d2, #36bfbf);
+  background-image: linear-gradient(to right, #2cb8d2, #36bfbf);
+}
+
+/* Footer */
+
+.footer {
+  background-color: #282f36;
+}
+
+.contact-container {
+  display: block;
+  padding-bottom: 40px;
+  text-align: left;
+}
+
+.contact-social {
+  padding-top: 20px;
+}
+
+.contact-email {
+  padding-top: 20px;
+}
+
+.social-link {
+  display: block;
+  font-family: Roboto, sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+  text-align: left;
+  letter-spacing: 1px;
+  list-style-type: none;
+}
+
+.social-link:hover {
+  color: rgba(255, 255, 255, 0.54);
+}
+
+.contact-title {
+  font-family: Roboto, sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  list-style-type: none;
+}
+
+.social-link .contact-title {
+  margin-top: 20px;
+}
+
+.social-link-text {
+}
+
+.social-link-icon {
+  margin-right: 30px;
+}
+
+.section-header {
+  display: block;
+  font-family: Roboto, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.section-text {
+  font-family: Roboto, sans-serif;
+  color: rgba(51, 51, 51, 0.82);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 0px;
+  text-indent: 0px;
+}
+
+.content-container {
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+/* Common */
+
+a {
+  text-decoration:none;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.home-illustration .apps-illustration  {
+  max-width: 80%;
+}
+
+/* Overrides */
+
+.app-wrapper {
+  width: 60%;
+}
+
+.home-text {
+  color: white;
+  padding-top: 0px;
+}
+
+.app-description {
+  text-align: left;
+} 
+
+/* Media Queries */
+
+@media screen and (min-width: 1200px) {       
+  .w-container {       
+    max-width: 1300px;    
+  }   
+}
+
+
+#footer .w-container {       
+    max-width: 1000px;    
+} 
+
+/* mobile phones, tablets */
+@media screen and (max-width: 1025px) {
+  .app-wrapper {
+    width: 80%;
+  }
+
+  .home-copy-wrapper {
+    margin-top: 20px;
+  }
+
+  .blog-wrapper {
+    margin-top: 20px;
+  }
+
+  .home-illustration {
+    display: block;
+    float: none;
+    clear: none;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    padding: 0px;
+  } 
+
+  .contact-email {
+    padding-left: 0;
+  }
+
+  .contact-social {
+    padding-left: 0;
+  }
+
+  .contact-title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+
+  .social-link {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-link {
+    background-color: rgba(51, 51, 51, 0);
+  }
+  .nav-view-resume {
+    float: left;
+    clear: none;
+    text-align: center;
+  }
+  .w-nav-menu {
+    padding-bottom: 20px;
+    background-color: #282f36;
+  }
+}

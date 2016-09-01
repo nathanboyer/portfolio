@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body class="body">
+
+  <div class="w-section">
+    <div id="home">
+
+      <!-- NAVIGATION -->
+      <div data-collapse="medium" data-animation="default" data-duration="400" data-contain="1" class="w-nav">
+        <div class="w-container">
+          <a href="#home" class="w-nav-brand logo"></a>
+          <nav role="navigation" class="w-nav-menu">
+            <a href="#about" class="w-nav-link nav-link">About</a>
+            <a href="#apps" class="w-nav-link nav-link">Apps</a>
+            <a href="https://medium.com/@devonboyer" target="_blank" class="w-nav-link nav-link">Blog</a>
+            <div class="nav-view-resume"><%= link_to("Résumé / CV", asset_path("devon-boyer-resume.pdf"), alt: "resume", class: "w-button nav-view-resume-button") %></div>
+          </nav>
+          <div class="w-nav-button">
+            <div class="w-icon-nav-menu"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-container home-container">
+
+        <!-- ILLUSTRATION -->
+        <%= image_tag("header-artwork.png", alt: "coffee and iMac", class: "home-illustration") %>
+
+        <!-- COPY -->
+        <div class="home-copy-wrapper center">
+          <h1 class="home-title">DEVON BOYER</h1>
+          <div class="section-text home-text">I currently spend my days studying computer science at the University of Waterloo.</div>
+        </div>
+
+        <!-- BLOG POSTS -->
+        <div class="blog-wrapper center">
+          <div class="blog-post">
+            <div class="blog-post-title">GOALS AND GARTER SNAKES</div>
+            <div class="blog-post-metadata">PUBLISHED JAN 2 2016 | 4 READS</div><a href="https://medium.com/@devonboyer/goals-and-garter-snakes-e8c0332dab0a#.k24ajzqqs" target="_blank" class="w-button medium-button">READ ON MEDIUM</a>
+          </div>
+          <div class="blog-post">
+            <div class="blog-post-title">A TRANSITION WITH SOME<br>PERSONALITY</div>
+            <div class="blog-post-metadata">PUBLISHED FEB 4 2015 | 121 READS</div><a href="https://medium.com/@devonboyer/a-transition-with-some-personality-32e43a7404ed#.hqxt528mr" target="_blank" class="w-button medium-button">READ ON MEDIUM</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="w-section">
+    <div id="about" class="about">
+      <div class="w-container content-container center">
+        <h1 class="section-header">ABOUT</h1>
+        <div class="section-text">I am a second year computer science student at UWaterloo and interested in mobile development, building REST APIs, and UI design. I previously attended Queen’s University because of a strong interest in the life sciences as well as computer science. While learning iOS and attending Queen’s I became very interested in mobile development and UI design, and decided to transfer to UWaterloo for the co-op opportunities.</div>
+        <div class="about-view-resume"><%= link_to("Résumé / CV", asset_path("devon-boyer-resume.pdf"), alt: "resume", class: "w-button about-view-resume-button") %>
+        </div>
+      </div>
+    </div>
+    <div id="apps" class="apps">
+      <div class="w-container content-container center">
+        <h1 class="section-header">APPS</h1>
+        <%= image_tag("apps-artwork.png", alt: "workstation", class: "apps-illustration") %>
+
+        <!-- APPS -->
+        <div class="apps-container">
+          <div class="w-clearfix app-wrapper center"><%= image_tag("app-flowbook.png", alt: "flowbook", class: "app-icon") %>
+            <div class="app-name-container">
+              <div class="app-name">FLOWBOOK</div>
+              <div class="app-metadata">LAST UPDATED JUN 6 2014 | 4800 DOWNLOADS</div>
+            </div>
+            <div class="section-text app-description">Flowbook is the perfect companion for highschool, college, or university. Keep track of exams, projects, and assignments with ease.
+              <br>
+              <br>Flowbook features a beautiful color filled interface that displays tasks in a cover flow layout. Never miss another exam or deadline again.</div>
+            <a href="https://itunes.apple.com/us/app/flowbook/id879783886?mt=8" target="_blank" class="w-inline-block app-store-download"><%= image_tag("download-on-app-store.png", alt: "download on the app store", class: "app-store-download-icon") %>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="footer" class="w-section">
+    <div class="footer">
+      <div class="w-container contact-container">
+        <div class="w-row">
+          <div class="w-col w-col-6 contact-social">
+            <a href="https://twitter.com/devboyer" target="_blank" class="w-inline-block social-link"><%= image_tag("twitter.png", alt: "twitter", class: "social-link-icon") %>
+              <div class="social-link-text">Twitter</div>
+            </a>
+            <a href="https://ca.linkedin.com/in/devon-boyer-2229626b" target="_blank" class="w-inline-block social-link"><%= image_tag("linkedin.png", alt: "linkedin", class: "social-link-icon") %>
+              <div class="social-link-text">LinkedIn</div>
+            </a>
+            <a href="https://github.com/DevonBoyer" target="_blank" class="w-inline-block social-link"><%= image_tag("github.png", alt: "github", class: "social-link-icon") %>
+              <div class="social-link-text">Github</div>
+            </a>
+            <a href="https://dribbble.com/devonboyer" target="_blank" class="w-inline-block social-link"><%= image_tag("dribbble.png", alt: "dribbble", class: "social-link-icon") %>
+              <div class="social-link-text">Dribbble</div>
+            </a>
+          </div>
+          <div class="w-col w-col-6 contact-email">
+            <div class="contact-title">Get in touch</div>
+            <a href="mailto:hello@devonboyer.com?subject=Get%20in%20touch" class="w-inline-block social-link">
+              <div class="social-link-text">hello@devonboyer.com</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://daks2k3a4ib2z.cloudfront.net/5685bd11172915f3167120b6/js/webflow.4e55dafc9.js"></script>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-71896083-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
